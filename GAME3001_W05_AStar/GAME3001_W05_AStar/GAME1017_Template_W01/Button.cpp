@@ -56,3 +56,10 @@ void Button::Render()
 }
 
 // Create button subclasses and their overridden Execute methods below...
+
+PlayButton::PlayButton(SDL_Rect src, SDL_FRect dst, SDL_Renderer* r, SDL_Texture* t) :Button(src, dst, r, t) {}
+void PlayButton::Execute()
+{
+	SOMA::PlaySound("button", 0, 1);
+	STMA::ChangeState(new GameState);
+}

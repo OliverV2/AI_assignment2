@@ -1,7 +1,9 @@
 #include "Engine.h"
 #include "Label.h"
+#include "States.h"
 #include "FontManager.h"
 #include <cstring>
+#include <SDL_ttf.h>
 
 Label::Label(std::string key, const float x, const float y, const char* str,
 	const SDL_Color col) :m_TextColor(col)

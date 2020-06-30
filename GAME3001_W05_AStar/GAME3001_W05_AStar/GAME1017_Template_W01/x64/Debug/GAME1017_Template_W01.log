@@ -1,0 +1,33 @@
+﻿  Button.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\Sprite.h(5,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  CollisionManager.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\CollisionManager.h(6,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  DebugManager.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\DebugManager.h(6,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Engine.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\Engine.h(7,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  EventManager.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\EventManager.h(5,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  FontManager.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\FontManager.h(7,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Pathing.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\Pathing.h(4,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  PathManager.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\Pathing.h(4,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Player.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\Sprite.h(5,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  SoundManager.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\SoundManager.h(8,10): fatal error C1083: Cannot open include file: 'SDL_mixer.h': No such file or directory
+  StateManager.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\States.h(5,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Label.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\Engine.h(7,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Main.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\Engine.h(7,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  MathManager.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\MathManager.h(7,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  States.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\States.h(5,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  TextureManager.cpp
+C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\GAME1017_Template_W01\TextureManager.h(7,10): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Generating Code...

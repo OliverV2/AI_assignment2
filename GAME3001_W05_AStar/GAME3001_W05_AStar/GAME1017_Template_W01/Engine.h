@@ -23,20 +23,13 @@ public: // Public methods.
 	static Engine& Instance(); // This static method creates the static instance that can be accessed 'globally'
 	SDL_Renderer* GetRenderer();
 	bool& Running();
-	std::array<std::array<Tile*, COLS>, ROWS>& GetLevel() { return m_level; }
 
 private: // Private properties.
 	bool m_running; // Loop control flag.
 	Uint32 m_start, m_end, m_delta, m_fps; // Fixed timestep variables.
 	SDL_Window* m_pWindow; // This represents the SDL window.
 	SDL_Renderer* m_pRenderer; // This represents the buffer to draw to.
-	// Example-specific properties.
-	SDL_Texture *m_pTileText, *m_pPlayerText;
-	std::map<char, Tile*> m_tiles;
-	std::array<std::array<Tile*, COLS>,ROWS> m_level; // Fixed-size STL array of Tile pointers.
-	Player* m_pPlayer;
-	Sprite* m_pBling;
-	bool m_showCosts = false, m_hEuclid = true;
+
 
 private: // Private methods.
 	Engine();

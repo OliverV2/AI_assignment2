@@ -3,6 +3,19 @@
 #define _STATES_H_
 
 #include <SDL.h>
+#include <SDL_image.h>
+#include <SDL_mixer.h>
+#include <SDL_ttf.h>
+#include <array>
+#include <map>
+#include "Button.h"
+#include "Tile.h"
+#include "Player.h"
+#include "Label.h"
+
+#define ROWS 24
+#define COLS 32
+
 
 class State // This is the abstract base class for all specific states.
 {
@@ -16,5 +29,40 @@ public: // Public methods.
 protected: // Private but inherited.
 	State() {}
 };
+
+class GameState : public State
+{
+private:
+	SDL_Texture* m_pTileText, * m_pPlayerText;
+	std::map<char, Tile*> m_tiles;
+	std::array<std::array<Tile*, COLS>, ROWS> m_level; // Fixed-size STL array of Tile pointers.
+	Player* m_pPlayer;
+	Sprite* m_pBling;
+	bool m_showCosts = false, m_hEuclid = true;
+
+public:
+	GameState();
+	void Update();
+	void Render();
+	void Enter();
+	void Exit();
+	void Resume();
+	std::array<std::array<Tile*, COLS>, ROWS> GetLevel() { return m_level; }
+};
+
+class TitleState : public State
+{
+public:
+	TitleState();
+	void Update();
+	void Render();
+	void Enter();
+	void Exit();
+private:
+	Label* m_pName;
+	Button* m_playBtn;
+};
+
+
 
 #endif

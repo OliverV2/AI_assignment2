@@ -1,18 +1,2 @@
-﻿  Button.cpp
-  CollisionManager.cpp
-  DebugManager.cpp
-  Engine.cpp
-  EventManager.cpp
-  FontManager.cpp
-  Pathing.cpp
-  PathManager.cpp
-  Player.cpp
-  SoundManager.cpp
-  StateManager.cpp
-  Label.cpp
-  Main.cpp
-  MathManager.cpp
-  States.cpp
-  TextureManager.cpp
-  Generating Code...
-  GAME1017_Template_W01.vcxproj -> C:\Users\olive\source\repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\Debug\GAME1017_Template_W01.exe
+﻿  States.cpp
+  GAME1017_Template_W01.vcxproj -> C:\Users\olive\Source\Repos\AI_assignment2\GAME3001_W05_AStar\GAME3001_W05_AStar\Debug\GAME1017_Template_W01.exe
