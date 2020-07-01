@@ -33,7 +33,7 @@ void GameState::Enter()
 	srand((unsigned)time(NULL));
 	m_pTileText = IMG_LoadTexture(Engine::Instance().GetRenderer(), "Img/Tiles.png");
 	m_pPlayerText = IMG_LoadTexture(Engine::Instance().GetRenderer(), "Img/Maga.png");
-	/*FOMA::RegisterFont("img/ltype.ttf", "tile", 10);*/
+	/*FOMA::RegisterFont("Img/LTYPE.ttf", "tile", 10);*/
 	m_pPlayer = new Player({ 0,0,32,32 }, { (float)(16) * 32, (float)(12) * 32, 32, 32 }, Engine::Instance().GetRenderer(), m_pPlayerText, 0, 0, 0, 4);
 	m_pBling = new Sprite({ 224,64,32,32 }, { (float)(16) * 32, (float)(4) * 32, 32, 32 }, Engine::Instance().GetRenderer(), m_pTileText);
 	ifstream inFile("Dat/Tiledata.txt");
@@ -62,9 +62,9 @@ void GameState::Enter()
 				m_level[row][col]->GetDstP()->x = (float)(32 * col);
 				m_level[row][col]->GetDstP()->y = (float)(32 * row);
 				// Instantiate the labels for each tile.
-				m_level[row][col]->m_lCost = new Label("tile", m_level[row][col]->GetDstP()->x + 4, m_level[row][col]->GetDstP()->y + 18, " ", { 0,0,0,255 });
-				m_level[row][col]->m_lX = new Label("tile", m_level[row][col]->GetDstP()->x + 18, m_level[row][col]->GetDstP()->y + 2, to_string(col).c_str(), { 0,0,0,255 });
-				m_level[row][col]->m_lY = new Label("tile", m_level[row][col]->GetDstP()->x + 2, m_level[row][col]->GetDstP()->y + 2, to_string(row).c_str(), { 0,0,0,255 });
+				m_level[row][col]->m_lCost = new Label("ltype", m_level[row][col]->GetDstP()->x + 4, m_level[row][col]->GetDstP()->y + 18, " ", { 0,0,0,255 });
+				m_level[row][col]->m_lX = new Label("ltype", m_level[row][col]->GetDstP()->x + 18, m_level[row][col]->GetDstP()->y + 2, to_string(col).c_str(), { 0,0,0,255 });
+				m_level[row][col]->m_lY = new Label("ltype", m_level[row][col]->GetDstP()->x + 2, m_level[row][col]->GetDstP()->y + 2, to_string(row).c_str(), { 0,0,0,255 });
 				// Construct the Node for a valid tile.
 				if (!m_level[row][col]->IsObstacle() && !m_level[row][col]->IsHazard())
 					m_level[row][col]->m_node = new PathNode((int)(m_level[row][col]->GetDstP()->x), (int)(m_level[row][col]->GetDstP()->y));
@@ -222,6 +222,7 @@ void TitleState::Render()
 void TitleState::Exit()
 {
 	std::cout << "Exiting TitleState..." << std::endl;
+	m_pName->~Label();
 	delete m_pName;
 	delete m_playBtn;
 	m_playBtn = nullptr;
